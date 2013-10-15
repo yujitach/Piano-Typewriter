@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		338CF39F180D4C410028E31E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338CF39E180D4C410028E31E /* Cocoa.framework */; };
+		338CF3A9180D4C410028E31E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 338CF3A7180D4C410028E31E /* InfoPlist.strings */; };
+		338CF3AB180D4C410028E31E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 338CF3AA180D4C410028E31E /* main.m */; };
+		338CF3AF180D4C410028E31E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 338CF3AD180D4C410028E31E /* Credits.rtf */; };
+		338CF3B2180D4C410028E31E /* YTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 338CF3B1180D4C410028E31E /* YTAppDelegate.m */; };
+		338CF3B5180D4C420028E31E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338CF3B3180D4C420028E31E /* MainMenu.xib */; };
+		338CF3B7180D4C420028E31E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338CF3B6180D4C420028E31E /* Images.xcassets */; };
+		338CF3BE180D4C420028E31E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338CF3BD180D4C420028E31E /* XCTest.framework */; };
+		338CF3BF180D4C420028E31E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338CF39E180D4C410028E31E /* Cocoa.framework */; };
+		338CF3C7180D4C420028E31E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 338CF3C5180D4C420028E31E /* InfoPlist.strings */; };
+		338CF3C9180D4C420028E31E /* Piano_TypewriterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 338CF3C8180D4C420028E31E /* Piano_TypewriterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		338CF3C0180D4C420028E31E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 338CF393180D4C410028E31E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 338CF39A180D4C410028E31E;
+			remoteInfo = "Piano Typewriter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		338CF39B180D4C410028E31E /* Piano Typewriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Piano Typewriter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		338CF39E180D4C410028E31E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		338CF3A1180D4C410028E31E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		338CF3A2180D4C410028E31E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		338CF3A3180D4C410028E31E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		338CF3A6180D4C410028E31E /* Piano Typewriter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Piano Typewriter-Info.plist"; sourceTree = "<group>"; };
+		338CF3A8180D4C410028E31E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		338CF3AA180D4C410028E31E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		338CF3AC180D4C410028E31E /* Piano Typewriter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Piano Typewriter-Prefix.pch"; sourceTree = "<group>"; };
+		338CF3AE180D4C410028E31E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		338CF3B0180D4C410028E31E /* YTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTAppDelegate.h; sourceTree = "<group>"; };
+		338CF3B1180D4C410028E31E /* YTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTAppDelegate.m; sourceTree = "<group>"; };
+		338CF3B4180D4C420028E31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		338CF3B6180D4C420028E31E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		338CF3BC180D4C420028E31E /* Piano TypewriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Piano TypewriterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		338CF3BD180D4C420028E31E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		338CF3C4180D4C420028E31E /* Piano TypewriterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Piano TypewriterTests-Info.plist"; sourceTree = "<group>"; };
+		338CF3C6180D4C420028E31E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		338CF3C8180D4C420028E31E /* Piano_TypewriterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Piano_TypewriterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		338CF398180D4C410028E31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338CF39F180D4C410028E31E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		338CF3B9180D4C420028E31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338CF3BF180D4C420028E31E /* Cocoa.framework in Frameworks */,
+				338CF3BE180D4C420028E31E /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		338CF392180D4C410028E31E = {
+			isa = PBXGroup;
+			children = (
+				338CF3A4180D4C410028E31E /* Piano Typewriter */,
+				338CF3C2180D4C420028E31E /* Piano TypewriterTests */,
+				338CF39D180D4C410028E31E /* Frameworks */,
+				338CF39C180D4C410028E31E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		338CF39C180D4C410028E31E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				338CF39B180D4C410028E31E /* Piano Typewriter.app */,
+				338CF3BC180D4C420028E31E /* Piano TypewriterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		338CF39D180D4C410028E31E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				338CF39E180D4C410028E31E /* Cocoa.framework */,
+				338CF3BD180D4C420028E31E /* XCTest.framework */,
+				338CF3A0180D4C410028E31E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		338CF3A0180D4C410028E31E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				338CF3A1180D4C410028E31E /* AppKit.framework */,
+				338CF3A2180D4C410028E31E /* CoreData.framework */,
+				338CF3A3180D4C410028E31E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		338CF3A4180D4C410028E31E /* Piano Typewriter */ = {
+			isa = PBXGroup;
+			children = (
+				338CF3B0180D4C410028E31E /* YTAppDelegate.h */,
+				338CF3B1180D4C410028E31E /* YTAppDelegate.m */,
+				338CF3B3180D4C420028E31E /* MainMenu.xib */,
+				338CF3B6180D4C420028E31E /* Images.xcassets */,
+				338CF3A5180D4C410028E31E /* Supporting Files */,
+			);
+			path = "Piano Typewriter";
+			sourceTree = "<group>";
+		};
+		338CF3A5180D4C410028E31E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				338CF3A6180D4C410028E31E /* Piano Typewriter-Info.plist */,
+				338CF3A7180D4C410028E31E /* InfoPlist.strings */,
+				338CF3AA180D4C410028E31E /* main.m */,
+				338CF3AC180D4C410028E31E /* Piano Typewriter-Prefix.pch */,
+				338CF3AD180D4C410028E31E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		338CF3C2180D4C420028E31E /* Piano TypewriterTests */ = {
+			isa = PBXGroup;
+			children = (
+				338CF3C8180D4C420028E31E /* Piano_TypewriterTests.m */,
+				338CF3C3180D4C420028E31E /* Supporting Files */,
+			);
+			path = "Piano TypewriterTests";
+			sourceTree = "<group>";
+		};
+		338CF3C3180D4C420028E31E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				338CF3C4180D4C420028E31E /* Piano TypewriterTests-Info.plist */,
+				338CF3C5180D4C420028E31E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		338CF39A180D4C410028E31E /* Piano Typewriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338CF3CC180D4C420028E31E /* Build configuration list for PBXNativeTarget "Piano Typewriter" */;
+			buildPhases = (
+				338CF397180D4C410028E31E /* Sources */,
+				338CF398180D4C410028E31E /* Frameworks */,
+				338CF399180D4C410028E31E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Piano Typewriter";
+			productName = "Piano Typewriter";
+			productReference = 338CF39B180D4C410028E31E /* Piano Typewriter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		338CF3BB180D4C420028E31E /* Piano TypewriterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338CF3CF180D4C420028E31E /* Build configuration list for PBXNativeTarget "Piano TypewriterTests" */;
+			buildPhases = (
+				338CF3B8180D4C420028E31E /* Sources */,
+				338CF3B9180D4C420028E31E /* Frameworks */,
+				338CF3BA180D4C420028E31E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				338CF3C1180D4C420028E31E /* PBXTargetDependency */,
+			);
+			name = "Piano TypewriterTests";
+			productName = "Piano TypewriterTests";
+			productReference = 338CF3BC180D4C420028E31E /* Piano TypewriterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		338CF393180D4C410028E31E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Yuji Tachikawa";
+				TargetAttributes = {
+					338CF3BB180D4C420028E31E = {
+						TestTargetID = 338CF39A180D4C410028E31E;
+					};
+				};
+			};
+			buildConfigurationList = 338CF396180D4C410028E31E /* Build configuration list for PBXProject "Piano Typewriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 338CF392180D4C410028E31E;
+			productRefGroup = 338CF39C180D4C410028E31E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				338CF39A180D4C410028E31E /* Piano Typewriter */,
+				338CF3BB180D4C420028E31E /* Piano TypewriterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		338CF399180D4C410028E31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338CF3A9180D4C410028E31E /* InfoPlist.strings in Resources */,
+				338CF3B7180D4C420028E31E /* Images.xcassets in Resources */,
+				338CF3AF180D4C410028E31E /* Credits.rtf in Resources */,
+				338CF3B5180D4C420028E31E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		338CF3BA180D4C420028E31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338CF3C7180D4C420028E31E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		338CF397180D4C410028E31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338CF3AB180D4C410028E31E /* main.m in Sources */,
+				338CF3B2180D4C410028E31E /* YTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		338CF3B8180D4C420028E31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338CF3C9180D4C420028E31E /* Piano_TypewriterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		338CF3C1180D4C420028E31E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 338CF39A180D4C410028E31E /* Piano Typewriter */;
+			targetProxy = 338CF3C0180D4C420028E31E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		338CF3A7180D4C410028E31E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				338CF3A8180D4C410028E31E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		338CF3AD180D4C410028E31E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				338CF3AE180D4C410028E31E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		338CF3B3180D4C420028E31E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				338CF3B4180D4C420028E31E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		338CF3C5180D4C420028E31E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				338CF3C6180D4C420028E31E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		338CF3CA180D4C420028E31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		338CF3CB180D4C420028E31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		338CF3CD180D4C420028E31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Piano Typewriter/Piano Typewriter-Prefix.pch";
+				INFOPLIST_FILE = "Piano Typewriter/Piano Typewriter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		338CF3CE180D4C420028E31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Piano Typewriter/Piano Typewriter-Prefix.pch";
+				INFOPLIST_FILE = "Piano Typewriter/Piano Typewriter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		338CF3D0180D4C420028E31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Piano Typewriter.app/Contents/MacOS/Piano Typewriter";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Piano Typewriter/Piano Typewriter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Piano TypewriterTests/Piano TypewriterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		338CF3D1180D4C420028E31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Piano Typewriter.app/Contents/MacOS/Piano Typewriter";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Piano Typewriter/Piano Typewriter-Prefix.pch";
+				INFOPLIST_FILE = "Piano TypewriterTests/Piano TypewriterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		338CF396180D4C410028E31E /* Build configuration list for PBXProject "Piano Typewriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338CF3CA180D4C420028E31E /* Debug */,
+				338CF3CB180D4C420028E31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		338CF3CC180D4C420028E31E /* Build configuration list for PBXNativeTarget "Piano Typewriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338CF3CD180D4C420028E31E /* Debug */,
+				338CF3CE180D4C420028E31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		338CF3CF180D4C420028E31E /* Build configuration list for PBXNativeTarget "Piano TypewriterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338CF3D0180D4C420028E31E /* Debug */,
+				338CF3D1180D4C420028E31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 338CF393180D4C410028E31E /* Project object */;
+}
