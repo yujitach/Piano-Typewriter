@@ -11,5 +11,7 @@
 @interface YTAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet NSPopUpButton *button;
+-(IBAction)openPref:(id)sender;
+-(IBAction)soundChanged:(id)sender;
 @end
