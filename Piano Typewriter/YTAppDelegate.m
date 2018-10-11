@@ -47,17 +47,7 @@ enum {
     [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"sound"];
 }
 -(IBAction)openPref:(id)sender{
-    SInt32 major=10,minor=0,bugFix=0;
-    Gestalt(gestaltSystemVersionMajor, &major);
-    Gestalt(gestaltSystemVersionMinor, &minor);
-    Gestalt(gestaltSystemVersionBugFix, &bugFix);
-    if(minor<9){
-    NSAppleScript *a = [[NSAppleScript alloc] initWithSource:@"tell application \"System Preferences\"\nactivate\nset current pane to pane \"com.apple.preference.universalaccess\"\nactivate\nend tell"];
-        [a executeAndReturnError:nil];
-    }else{
-        NSAppleScript *a = [[NSAppleScript alloc] initWithSource:@"tell application \"System Preferences\"\nactivate\nset current pane to pane \"com.apple.preference.security\"\nactivate\nend tell"];
-        [a executeAndReturnError:nil];
-    }
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"]];
 }
 - (IBAction) playNote:(UInt32)noteNum {
     
@@ -74,7 +64,7 @@ logTheError:
 
 - (IBAction)stopNote:(NSNumber*)note {
     
-    UInt32 noteNum = [note integerValue];
+    UInt32 noteNum = (UInt32)[note integerValue];
     UInt32 noteCommand =    kMIDIMessage_NoteOff << 4 | 0;
     UInt32 offVelocity = 64;
     OSStatus result = noErr;
@@ -261,53 +251,19 @@ logTheError:
 }
 
 - (OSStatus) loadSynthFromPresetURL: (NSURL *) presetURL {
+    NSData*data=[NSData dataWithContentsOfURL:presetURL];
+    NSDictionary*pref=[NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:nil error:nil];
+
     
-    CFDataRef propertyResourceData = 0;
-    Boolean status;
-    SInt32 errorCode = 0;
-    OSStatus result = noErr;
-    
-    // Read from the URL and convert into a CFData chunk
-    status = CFURLCreateDataAndPropertiesFromResource (
-                                                       kCFAllocatorDefault,
-                                                       (__bridge CFURLRef) presetURL,
-                                                       &propertyResourceData,
-                                                       NULL,
-                                                       NULL,
-                                                       &errorCode
-                                                       );
-    
-    NSAssert (status == YES && propertyResourceData != 0, @"Unable to create data and properties from a preset. Error code: %d '%.4s'", (int) errorCode, (const char *)&errorCode);
-    
-    // Convert the data object into a property list
-    CFPropertyListRef presetPropertyList = 0;
-    CFPropertyListFormat dataFormat = 0;
-    CFErrorRef errorRef = 0;
-    presetPropertyList = CFPropertyListCreateWithData (
-                                                       kCFAllocatorDefault,
-                                                       propertyResourceData,
-                                                       kCFPropertyListImmutable,
-                                                       &dataFormat,
-                                                       &errorRef
-                                                       );
-    
-    // Set the class info property for the Sampler unit using the property list as the value.
-    if (presetPropertyList != 0) {
-        
-        result = AudioUnitSetProperty(
+    OSStatus    result = AudioUnitSetProperty(
                                       self.samplerUnit,
                                       kAudioUnitProperty_ClassInfo,
                                       kAudioUnitScope_Global,
                                       0,
-                                      &presetPropertyList,
+                                      &pref,
                                       sizeof(CFPropertyListRef)
                                       );
         
-        CFRelease(presetPropertyList);
-    }
-    
-    if (errorRef) CFRelease(errorRef);
-    CFRelease (propertyResourceData);
     
     return result;
 }
