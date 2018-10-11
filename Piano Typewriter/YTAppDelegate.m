@@ -66,7 +66,7 @@ enum {
     UInt32 noteCommand = 	kMIDIMessage_NoteOn << 4 | 0;
     
     OSStatus result = noErr;
-    require_noerr (result = MusicDeviceMIDIEvent (self.samplerUnit, noteCommand, noteNum, onVelocity, 0), logTheError);
+    __Require_noErr (result = MusicDeviceMIDIEvent (self.samplerUnit, noteCommand, noteNum, onVelocity, 0), logTheError);
     
 logTheError:
     if (result != noErr) NSLog (@"Unable to start playing the low note. Error code: %d '%.4s'\n", (int) result, (const char *)&result);
@@ -78,7 +78,7 @@ logTheError:
     UInt32 noteCommand =    kMIDIMessage_NoteOff << 4 | 0;
     UInt32 offVelocity = 64;
     OSStatus result = noErr;
-    require_noerr (result = MusicDeviceMIDIEvent(self.samplerUnit, noteCommand, noteNum, offVelocity, 0), logTheError);
+    __Require_noErr (result = MusicDeviceMIDIEvent(self.samplerUnit, noteCommand, noteNum, offVelocity, 0), logTheError);
     
 logTheError:
     if (result != noErr) NSLog (@"Unable to stop playing the high note. Error code: %d '%.4s'", (int) result, (const char *)&result);
@@ -123,6 +123,12 @@ logTheError:
         [self keyPress: event];
         //Or just put your code here
     }];
+    /*
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
+        [self keyPress: event];
+        return event;
+    }];
+     */
 }
 
 // Create an audio processing graph.
